@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>DAS | Photo Gallery</title>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	
+	<style>
+		body
+		{
+			margin: 50px 100px 500px 100px;
+			background-color:#DDDDDD;
+		}
+		#photo
+		{
+			height:350px;
+			width:250px;
+		}
+		#logo
+		{
+			float:left;
+			height:75px;
+			width:75px;
+		}
+	</style>
+	
+	<script type="javascript">
+		function image_enlarge()
+		{
+			document.getElementById("photo").style.width=350px;
+			document.getElementById("photo").style.height=450px;
+		}
+	</script>
+</head>
+
+<body>
+	<div class="jumbotron">
+		<img src="images/das_logo.jpg" id="logo">
+		<h1 style="float:right;">My Gallery</h1><br><br>
+	</div>
+	
+	<div class="jumbotron">
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="images/img.jpg" id="photo" onmouseover="image_enlarge();">
+			</div>
+			<div class="col-sm-4">
+				<img src="images/img1.jpg" id="photo" onmouseover="image_enlarge();">
+			</div>
+			<div class="col-sm-4">
+				<img src="images/img.jpg" id="photo" onmouseover="image_enlarge();">
+			</div>
+		</div><br><br>
+		
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="images/img2.jpg" id="photo" onmouseover="image_enlarge();">
+			</div>
+			<div class="col-sm-4">
+				<img src="images/img.jpg" id="photo" onmouseover="image_enlarge();">
+			</div>
+			<div class="col-sm-4">
+				<img src="images/img3.jpg" id="photo" onmouseover="image_enlarge();">
+			</div>
+		</div><br><br>
+		
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="images/img.jpg" id="photo" onmouseover="image_enlarge();">
+			</div>
+			<div class="col-sm-4">
+				<img src="images/img4.jpg" id="photo" onmouseover="image_enlarge();">
+			</div>
+			<div class="col-sm-4">
+				<img src="images/img.jpg" id="photo" onmouseover="image_enlarge();">
+			</div>
+		</div><br><br>
+	</div>
+	
+	<br><br><hr>
+	<footer style="text-align:center;"><code>Copyright @Dattatray Shahane 2020</code></footer>
+	<hr>
+</body>
+
+</html>
