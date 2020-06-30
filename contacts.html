@@ -30,22 +30,26 @@
 <body>
 
 	<div class="jumbotron">
-		<img src="das_logo.jpg" id="logo">
+		<img src="images/das_logo.jpg" id="logo">
 		<h1 style="float:right;">Get in Touch!</h1><br><br>
 	</div>
 	
-	<div class="jumbotron">
-		<div class="form">
+
+	<form name="form1" action="mailto:das1405.web@gmail.com" enctype="text/plain" method="POST">
+	<div class="jumbotron" class="rows">
+		<div class="form-group" class="col-sm-8">
 			<form>
 				<label>Name:</label><br>
-				<input type="text"></input><br><br>
+				<input type="text" class="form-control"></input><p style="font-size:75%">We will never share your data to anyone else.</p><br>
 				<label>E-mail Id:</label><br>
-				<input type="text"></input><br><br>
+				<input type="text" class="form-control"></input><br><br>
 				<label>Message:</label><br>
-				<textarea></textarea><br><br>
-				<input type="submit" id="submit"><br><br>
-			</form>
+				<textarea class="form-control"></textarea><br><br>
+				<input TYPE="SUBMIT" VALUE="Submit" id="submit"><br><br>
 		</div>
+	</form>
+	
+	</form>	
 	</div>
 
 	<br><br><hr>
